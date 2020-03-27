@@ -1,7 +1,7 @@
 const images=document.querySelectorAll('img');
 for(image of images){
-    image.style.height='15%';
-    image.style.width='15%';
+    image.style.height='20%';
+    image.style.width='20%';
     image.style.transition='all 2s';
     
 
@@ -9,8 +9,8 @@ for(image of images){
 
 setInterval(()=>{
     images.forEach((image)=>{
-        const y=Math.floor(Math.random()*document.body.clientHeight);
-        const x=Math.floor(Math.random()*document.body.clientWidth);
+        const y=Math.floor(Math.random()*document.body.clientHeight-300);
+        const x=Math.floor(Math.random()*document.body.clientWidth-300);
         const degree=Math.floor(Math.random()*360);
         image.style.transform=`translate(${x}px,${y}px) rotate(${degree}deg)`;
     })
