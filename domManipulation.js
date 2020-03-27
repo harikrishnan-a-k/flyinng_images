@@ -9,8 +9,8 @@ for(image of images){
 
 setInterval(()=>{
     images.forEach((image)=>{
-        const y=Math.floor(Math.random()*document.body.clientHeight-300);
-        const x=Math.floor(Math.random()*document.body.clientWidth-300);
+        const y=Math.floor(Math.random()*document.body.clientHeight-200);
+        const x=Math.floor(Math.random()*document.body.clientWidth-100);
         const degree=Math.floor(Math.random()*360);
         image.style.transform=`translate(${x}px,${y}px) rotate(${degree}deg)`;
     })
